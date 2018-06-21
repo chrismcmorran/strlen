@@ -16,16 +16,19 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
-  if (argc == 1) {
+int main(int argc, char *argv[])
+{
+  if (argc == 1)
+  {
     fprintf(stderr, "usage: strlen \"my string\"\n");
     return -1;
   }
 
   int i;
-  for (i = 1; i < argc; ++i) {
-    printf("%lu\n",strlen(argv[i]));
+  for (i = 1; i < argc; ++i)
+  {
+    printf("%lu\n", strlen(argv[i]));
   }
-  
+
   return 0;
 }

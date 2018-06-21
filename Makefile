@@ -1,9 +1,9 @@
 all:
-	cc strlen.c -o strlen
+	cc strlen.c -o strlen -O3
 
 install:
-	sudo cp strlen /usr/bin/strlen
-	sudo chmod +x /usr/bin/strlen
+	sudo cp strlen /usr/local/bin/strlen
+	sudo chmod +x /usr/local/bin/strlen
 
 clean:
 	rm strlen
